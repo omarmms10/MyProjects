@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #15202B;
+    /* Dark blue background color */
+    color: #fff;
+    /* Text color */
+}
+
+.containerr {
+    display: flex;
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+form {
+    flex: 1;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 4px;
+    margin-left: -50px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    border-radius: 4px;
+    margin-left: 200px;
+}
+
+/* Rest of your existing styles */
+
+h1 {
+    text-align: center;
+    margin-top: -80px;
+}
+.headingg{
+        margin-top: 70px;
+        margin-right: 250px;
+        font-style:italic;
+}
+.para{
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #37474F;
+    /* Container background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    /* Grey background color for text inputs */
+}
+
+.botn {
+    background-color: #4CAF50;
+    /* Green button color */
+    color: white;
+    padding: 8px 16px;
+        /* Adjust padding to decrease button size */    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+        font-size: 14px;
+            /* Adjust font size */
+                width: 100px;
+                    /* Adjust width */
+                    margin-top: 50px;
+                    margin-left: 40%;
+}
+
+.botn:hover {
+    background-color: #45a049;
+}

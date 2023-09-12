@@ -1,0 +1,74 @@
+/* Reset some default styles */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the first section */
+.full-width-section {
+    position: relative;
+    background-image: url('./tt.jpg');
+        /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        /* Adjust the height as needed */
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        color: white;
+        transition: opacity 0.5s ease;
+}
+
+
+        
+.transparent {
+            opacity: 0.09;
+        }
+
+.centered-text {
+    max-width: 600px;
+    /* Adjust as needed */
+    padding: 20px;
+    font-size: 48px;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: inline-block;
+    text-align: left;
+}
+
+.hed{
+margin-left: 50%;
+}
+.pp{
+    font-size: 18px;
+    font-weight:500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.ppp{
+    font-size: 18px;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        white-space: pre-line;
+        margin-left: 50%;
+}
+
+.pic {
+    width: 600px;
+    /* Set the desired width */
+    height: 400px;
+    /* Set the desired height */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+    display: block;
+    margin: 20px auto;
+}

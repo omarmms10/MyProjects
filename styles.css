@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+
+.firstHead {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* Ensure the h1 element appears above the background image */
+    text-align: center;
+    /* Center the text horizontally */
+    padding: 20px;
+    /* Add padding to the h1 element for better visibility */
+    color: white;  
+    width: 80%;
+    /* Adjust the width of the h1 element to your preference */
+}
+.vertical-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(80%, -50%);
+    width: 4px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Set the initial light color and opacity */
+    z-index: -1;
+    /* Place the line behind the h1 element */
+}
+
+
+/* Add more CSS styles for your website content here */
+.p1{
+    color: red;
+    font-size: 40px;
+    margin-left: 15%;
+}
+.p2{
+        font-size: 30px;
+        margin-left: 15%;
+}
+ol{
+        font-size: 30px;
+    flex: 1 1 auto;
+    /* Adjust the width of the paragraph to leave space for the image */
+    margin-left: 20%;
+    /* Add some space between the paragraph and the image */
+}
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+.img22{
+ 
+                max-width: 50%;
+                /* Adjust the image width as needed */
+                height: auto;
+                display: block;
+                margin-right: 200px;      
+}
+  .container {
+      position: relative;
+      max-width: 100%;
+  }
+
+  .img33 {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  .overlay {
+      position: absolute;
+      top: 20%;
+      left: 67%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+  }
+
+  .h1Unique{
+    color: rgb(179, 42, 79);
+    margin: 0;
+    padding: 0;}
+  .paragraph { 
+    margin: 0;
+    padding: 0;
+    max-height: 2.4em;
+    overflow: hidden;}
+
+/*.paragraph {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    max-height: 3.1em;
+    overflow: hidden;
+}
+*/
+.paragraph.expanded {
+    max-height: none;
+}
+
+.see-more-btn {
+    display: block;
+    margin: 0 auto;
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.see-more-btn:focus {
+    outline: none;
+}
+
+
+.box-container {
+        display: grid;
+        /* Use grid layout for two columns and two rows */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns with equal width */
+        grid-gap: 20px;
+        /* Add some space between the boxes */
+        margin-top: 50px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(210, 197, 197);
+        margin: 20px;
+            box-shadow: 30px 24px 26px rgba(0, 0, 0, 0.3);
+                /* Add box shadow */
+            /* Add margin to create space between box and border */
+}
+
+.box h3 {
+    color: red;
+    font-size: 22px;
+}
+
+.box p {
+    color: black;
+    font-size: 20px;
+}
+.mainHead{
+    color: red;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+

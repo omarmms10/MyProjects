@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="letsTalk.css">
+    <link rel="stylesheet" href="bodyFooter.css">
+    <link rel="stylesheet" href="headerNav.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header class="header">
+
+            
+                <a href="./menu.html">
+                    <button class="menu-button" onmousemove="showOpen()" onmouseout="hideOpen()" onclick="toggleMenu()"
+                        style="color: white;"><span class="menu-icon">☰</span>
+                        <span class="menu-text">Menu</span>
+                    </button>
+                </a>
+            
+    </header>
+        <div class="containerr">
+            <h1>Let's Talk</h1>
+
+            <form onsubmit="sendEmail(); reset; return false;" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button class="botn" type="submit">Send</button>
+            </form>
+            <div class="contact-info">
+                <h1 class="headingg"><strong>Contact Us Today</strong></h1>
+                <p class="para">Fill out the form below to get in touch with us. We are here to answer any questions you may
+                    have and help you with your digital marketing needs.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+<a href="index.html">
+    <img class="img1" src="./2--preview.png" alt="Logo">
+    <img class="img29" src="./log.png" alt="">
+</a>               
+            </div>
+        
+            <div class="icon-container">
+                <div class="icon"> <a href=""><img src="./logos/4-removebg-preview.png" alt="Icon 1">
+                    </a> </div>
+                <div class="icon"><a href=""><img src="./logos/5-removebg-preview.png" alt="Icon 2"></a></div>
+                <div class="icon"><a href=""><img src="./logos/9-removebg-preview.png" alt="Icon 3"></a></div>
+            </div>
+        
+            <div class="containr">
+                <div class="list">
+                    <div class="list-header">DISCOVER</div>
+                    <ul>
+                        <h1 class="heading"><a href="index.html">Home</a></h1>
+                        <h1 class="heading"><a href="why.html">Why AIO</a></h1>
+                        <h1 class="heading"><a href="services.html">Services</a></h1>
+                        <h1 class="heading"><a href="TT.html">Tips And Tricks</a></h1>
+                        <h1 class="heading"><a href="letsTalk.html">Let's Talk</a></h1>
+                    </ul>
+                </div>
+        
+                        <div class="list">
+                            <div class="list-header">CONTACT</div>
+                            <div class="item">
+                                <img src="./logos/707542-removebg-preview.png" alt="Item 1 Image">
+                                <div class="itemPara">
+                                    <a href="https://wa.me/201062727080" target="_blank">
+                                        <p>: 01062727080</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./logos/707542-removebg-preview.png" alt="Item 2 Image">
+                                <div class="itemPara">
+                                    <a href="https://wa.me/201026573331" target="_blank">
+                                        <p>: 01026573331</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./logos/thumbnail-removebg-preview.png" alt="Item 3 Image">
+                                <div class="itemPara">
+                                    <a href="https://mail.google.com/mail/u/0/#drafts?compose=CllgCKCGDWcwWDPDrlFnRHpXGldlvCjXvcnkGngvzqkcvNBXpQGxxGLcVGGVpnNBvhFqcnzBrnV"
+                                        target="_blank">
+                                        <p>: aiomarketingagency137@gmail.com</p>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                <div class="list">
+                    <div class="list-header">ADDRESS</div>
+                    <ul>
+                        <h1 class="heading"><a href=".html">Sidi Gaber,<br> Alexandria Governorate.</a></h1>
+        
+        
+                    </ul>
+                </div>
+            </div>
+        
+            <p>&copy; 2023 BSMART CREATIVE AGENCY</p>
+        
+        </footer>
+<script src="letsTalk.js"></script>
+<script src="menuBtn.js"></script>
+<script src="menuColor.js"></script>
+<script src="LT.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "omaradlymms2002@gmail.com",
+            Password: "01C44B2E0F6DDB0A2BD376907F60CD8BB623",
+            To: 'omaradlymms@gmail.com',
+            From: document.getElementById("email").value,
+            Subject: "New Contact Form Enquiry",
+            Body: "Name :"+ document.getElementById("name").value 
+            + " <br> Email :" + document.getElementById("email").value
+            +"<br> Message :" + document.getElementById("message").value
+        }).then(
+            message => alert("Message sent succesfully")
+        );
+    }
+</script>
+
+</body>
+
+</html>
