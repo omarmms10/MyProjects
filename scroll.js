@@ -11,11 +11,7 @@
             document.querySelector('.img1').style.zIndex = '2';
             document.querySelector('.img2').style.zIndex = '2';
         }
-        // For the image with class name 'img33'
-    var img33Opacity = 1.5 - scrollPercent;
-    document.querySelector('.img33').style.opacity = img33Opacity;
-
-
+       
         var lineOpacity = 1 - 2 * scrollPercent;
         // Double the speed of the line's disappearance
         document.querySelector('.vertical-line').style.opacity = lineOpacity;

@@ -29,10 +29,18 @@ h1{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.pe{
-color: white;
-font-size: 28px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
+
+                .whycontainer {
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+      
+        
+                .pe {
+                    font-size: 28px;
+                    line-height: 2;
+                    color: white;
+                                    /* Adjust the indentation as needed */
+                }
