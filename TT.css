@@ -35,7 +35,7 @@ p {
     padding: 20px;
     font-size: 48px;
 }
-.container {
+.containeer {
     text-align: center;
     padding: 20px;
 }
@@ -71,4 +71,81 @@ margin-left: 50%;
     /* Maintain aspect ratio and cover the container */
     display: block;
     margin: 20px auto;
+}
+
+/* CSS for mobile screens (up to 767px) */
+@media (max-width: 767px) {
+
+    body,
+    h1,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Apply styles to the first section */
+    .full-width-section {
+        position: relative;
+        background-image: url('./tt.jpg');
+        /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        /* Adjust the height as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        transition: opacity 0.5s ease;
+    }
+
+    .transparent {
+        opacity: 0.09;
+    }
+
+    .centered-text {
+        max-width: 600px;
+        /* Adjust as needed */
+        padding: 20px;
+        font-size: 48px;
+    }
+
+    .containeer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .content {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .hed {
+        margin-left: 50%;
+    }
+
+    .pp,
+    .ppp {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .ppp {
+        white-space: pre-line;
+        margin-left: 0;
+        /* Remove the margin-left on mobile screens */
+    }
+
+    .pic {
+        width: 100%;
+        /* Adjust width to 100% on mobile */
+        max-height: 300px;
+        /* Adjust max height as needed */
+        object-fit: cover;
+        /* Maintain aspect ratio and cover the container */
+        display: block;
+        margin: 20px auto;
+    }
 }

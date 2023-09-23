@@ -1,24 +1,28 @@
-body{
+/* Base Styles for both Desktop and Mobile */
+body {
     background-color: #211a1a;
-                align-items: center;
-                justify-content: center;
-                margin: 0;
-                padding: 0;
-        height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
+
 .content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    height: 100vh;
-            /* Use the full viewport height */
+    min-height: 100vh;
+    /* Use min-height instead of height for flexibility */
 }
+
 .button-list {
     list-style: none;
     padding: 20px;
     margin-left: 25%;
     margin-top: 100px;
+    text-align: center;
+    /* Center-align list items for mobile */
 }
 
 .button-list h1 {
@@ -29,7 +33,7 @@ body{
     padding: 10px;
     color: white;
     text-decoration: none;
-    font-size: 30 px;
+    font-size: 30px;
     border-radius: 8px;
     display: block;
 }
@@ -42,7 +46,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    width: auto;
     justify-content: space-between;
 }
 
@@ -53,12 +56,9 @@ body{
     justify-content: center;
     flex: 1;
     width: 250px;
-    /* Adjust the width as needed */
     height: 350px;
-    /* Adjust the height as needed */
     background-color: black;
     border: 1px solid white;
-    /* Add white border */
     border-radius: 10px;
     color: white;
     font-weight: bold;
@@ -83,4 +83,86 @@ body{
     height: 100px;
     margin-top: 10px;
 }
+.button-logoi {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+/* CSS for mobile screens (up to 767px) */
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column;
+        /* Arrange elements vertically for mobile */
+        align-items: center;
+        /* Center-align content for mobile */
+    }
 
+        .button-list {
+            list-style: none;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 0px;
+            text-align: center;
+            /* Center-align list items */
+        }
+    
+        .button-list h1 {
+            margin: 20px 0;
+        }
+    
+        .button-list h1 a {
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            display: block;
+        }
+    
+        .button-list h1 a:hover {
+            color: red;
+        }
+    
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            /* Arrange buttons vertically */
+            align-items: center;
+            /* Center-align buttons */
+            gap: 20px;
+            width: 100%;
+        }
+    
+        .color-button {
+            flex: 1;
+            width: 100%;
+            height: 300px;
+            background-color: rgb(246, 244, 244);
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.5s, color 0.5s;
+            padding: 0;
+            margin: 0;
+        }
+    
+    
+        .button-text {
+            margin-top: 10px;
+            text-align: center;
+            color: black;
+        }
+    
+        .button-logo {
+            width: 150px;
+            height: 75px;
+            margin-top: 10px;
+        }
+                         .button-logoi {
+                             width: 150px;
+                             height: 75px;
+                             margin-top: 10px;
+                         }
+}

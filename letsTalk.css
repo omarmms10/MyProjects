@@ -1,3 +1,7 @@
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+    /* Your desktop-specific CSS here */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -84,4 +88,94 @@ textarea {
 
 .botn:hover {
     background-color: #45a049;
+}
+}
+
+
+/* CSS for mobile screens (up to 767px) */
+@media (max-width: 767px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #15202B;
+        color: #fff;
+    }
+
+    .containerr {
+        display: flex;
+        flex-direction: column;
+        /* Change to column layout for mobile */
+        max-width: 100%;
+        /* Adjust the maximum width */
+        margin: 20px auto;
+        /* Adjust the margin */
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+        border-radius: 4px;
+        margin-left: 0;
+        /* Remove margin-left */
+    }
+
+    .contact-info {
+        padding: 20px;
+        border-radius: 4px;
+        margin-left: 0;
+        /* Remove margin-left */
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        /* Adjust margin-top for spacing */
+    }
+
+    .headingg {
+        margin-top: 20px;
+        /* Adjust margin-top for spacing */
+        margin-right: 0;
+        /* Remove margin-right */
+        font-style: italic;
+    }
+
+    .para {
+        margin-right: 0;
+        /* Remove margin-right */
+        font-size: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #37474F;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .botn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        width: 100px;
+        margin: 20px auto;
+        /* Center-align the button */
+    }
+
+    .botn:hover {
+        background-color: #45a049;
+    }
 }

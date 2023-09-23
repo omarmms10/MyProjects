@@ -5,11 +5,11 @@ ul {
     margin: 0;
     padding: 0;
 }
-/* Start footer */
 
 /* Styling for the footer */
 footer {
     background-color: #663399;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -29,16 +29,25 @@ footer {
 .list {
     flex: 1;
     padding: 0px;
+    margin-left: 10px;
+    /* Decreased margin-left for more compact spacing */
+    margin-top: 70px;
+}
+
+.list:not(:first-child) {
+    margin-left: 0;
+    /* Removed margin-left to reduce spacing between lists */
 }
 
 .list-header {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 5px;
+   
     /* Decreased margin for a more compact look */
 }
 
 .heading {
+    font-size: 24px;
     margin: 0;
     padding: 5px 0;
     /* Decreased padding for a more compact look */
@@ -90,6 +99,7 @@ footer {
     display: flex;
     align-items: center;
     padding: 20px;
+    margin-left: 200px;
 }
 
 .item img {
@@ -107,7 +117,9 @@ footer {
 }
 
 .img1B {
-    margin-top: -10px;
+    width: 100px;
+    margin-top: 0px;
+    margin-left: 10px;
     flex: 1;
     z-index: 1;
     border: 2px;
@@ -122,117 +134,82 @@ footer {
 .img2B {
     position: absolute;
     top: 0px;
+    /* Adjust the top position as needed */
+    left: 40px;
+    width: 250px;
     z-index: 1;
-        /* Adding transition */
+    transition: opacity 0.3s ease;
+    /* Adding transition */
 }
 
 .container {
     position: relative;
     max-width: 100%;
 }
-.itemPara{
+.itemPara {
     font-size: 22px;
-
 }
 
 
 @media screen and (min-width: 768px) {
 
-footer {
-        background-color: #663399;
-        padding: 20px;
+.list-header {
+ 
+        margin-bottom: 20px;
     }
-.list {
-    margin-left: 10px;
-    /* Decreased margin-left for more compact spacing */
-    margin-top: 70px;
-}
 
-.list:not(:first-child) {
-    margin-left: 0;
-    /* Removed margin-left to reduce spacing between lists */
 }
-.heading {
-    font-size: 24px;
-}
-.item {
-    margin-left: 200px;
-}
-
-
-.img1B {
-    width: 100px;
-    margin-left: 10px;
-}
-
-
-.img2B {
-    left: 50px;
-    width: 200px;
-    transition: opacity 0.5s ease;
-}
-.itemPara {
-    font-size: 22px;
-}
-}
-
-
-/* End footer */
 /* Mobile-specific styling for the footer */
 @media screen and (max-width: 767px) {
     footer {
-            background-color: #663399;
-            padding: 10px 0px 40px 0px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-    
-        .containr{
-            flex-wrap: wrap;
-            /* Allow items to wrap to the next line */
-            justify-content: flex-start;
-            /* Center-align items horizontally */
-        }
-    
-        .list {
-            margin: -5px;
-            max-width: 250px;
-        }
-    
-        /* Remove the margin from the last list item */
-        .list:last-child {
-            margin-right: 0;
-        }
-    
-    
-        .heading {
-            font-size: 18px;
-                   }
-    
-        .icon-container {
-            margin-bottom: 30px;
-        }
-        .item {
-            margin-left: 0;
-        }
+        background-color: #663399;
+        padding: 10px 0px 40px 0px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 
-  
+    .containr {
+        flex-wrap: wrap;
+        /* Allow items to wrap to the next line */
+        justify-content: flex-start;
+        /* Center-align items horizontally */
+    }
+
+    .list {
+        margin: -5px;
+        max-width: 250px;
+    }
+        .list-header {
     
-        .img1B {
-            width: 60px;
+            margin-bottom: 5px;
         }
-    
-  
-    
-        .img2B {
-            margin-top: 0px;
-            left: 40px;
-            width: 100px;
-            transition: opacity 0.3s ease;
-        }
-                .itemPara {
-                    font-size: 17px;
-                }
+    /* Remove the margin from the last list item */
+    .list:last-child {
+        margin-right: 0;
+    }
+
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .icon-container {
+        margin-bottom: 30px;
+    }
+
+    .item {
+        margin-left: 0;
+    }
+
+    .img1B {
+        width: 60px;
+    }
+    .img2B {
+        margin-top: 0px;
+        left: 40px;
+        width: 100px;
+        transition: opacity 0.3s ease;
+    }
 }
 
 /* End footer */

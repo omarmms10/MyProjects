@@ -1,3 +1,4 @@
+/* Common styling for both desktop and mobile */
 .header {
     display: flex;
     align-items: center;
@@ -6,29 +7,29 @@
     position: fixed;
     top: 0;
 }
+
 .background-image {
     width: 100%;
     height: 100%;
     transition: opacity 0.3s ease;
 }
 
-
 .menu-button {
     position: fixed;
     top: 20px;
-    right: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 16px;
     padding: 8px 16px;
 }
+
 .menu-text {
-    font-size: 25px;
     opacity: 1;
     transition: color 0.3s ease;
     /* Slower transition for the menu text */
 }
+
 /* White text color when background image is present */
 .background-image-visible.menu-button {
     color: white;
@@ -50,15 +51,15 @@
 }
 
 .image-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            background-color: #333;
-            padding: 10px;
-            overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    overflow: hidden;
 }
 
 /* Style for each image */
@@ -68,50 +69,111 @@
 }
 
 /* Positioning of img1 and img2 within img3 */
-.img1 {
-    width: 100px;
-    margin-top: 20px;
-    margin-left: 10px;
+.img1H {
     flex: 1;
     z-index: 1;
     border: 2px;
     position: absolute;
     top: 10px;
-    /* Adjust the top position as needed */
     left: 10px;
-    /* Adjust the left position as needed */
+    /* Adjust the top and left positions as needed */
+}
+.img1Hi {
+    flex: 1;
+    z-index: 1;
+    border: 2px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Adjust the top and left positions as needed */
+}
+.img2H {
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    /* Adding transition */
+}
+.img2Hi {
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    /* Adding transition */
 }
 
-.img2 {
-    position: absolute;
-    top: 50px;
-    /* Adjust the top position as needed */
-    left: 100px;
-    width: 150px;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-            /* Adding transition */
-}
-  .img29 {
-      position: absolute;
-      top: 20px;
-      /* Adjust the top position as needed */
-      left: 80px;
-      width: 200px;
-      z-index: 1;
-        transition: opacity 0.5s ease;
-      /* Adding transition */
-  }
-        .img2w {
-            position: absolute;
+
+@media screen and (min-width: 768px) {
+    /* Positioning of img1 and img2 within img3 */
+        .img1H {
+            width: 100px;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+                   .img1Hi {
+                       width: 100px;
+                       margin-top: 0px;
+                       margin-left: 10px;
+                   }
+        .img2H {
             top: 10px;
-            /* Adjust the top position as needed */
             left: 60px;
             width: 250px;
-            z-index: 1;
-                transition: opacity 0.3s ease;
-            /* Adding transition */
         }
+                                .img2Hi {
+                                    top: 40px;
+                                    left: 90px;
+                                    width: 150px;
+                                }
+                .menu-button {
+                    right: 20px;
+                }
+}
+
+
+
+
+/* Mobile-specific styling */
+@media screen and (max-width: 767px) {
+
+    /* Positioning of img1 and img2 within img3 */
+        .img1H {
+            width: 60px;
+            /* Decreased width for mobile */
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+          .img1Hi {
+              width: 60px;
+              /* Decreased width for mobile */
+              margin-top: 10px;
+              margin-left: -200px;
+          }
+    .img2H {
+        position: absolute;
+        top: 0px;
+        margin-top: -130px;
+        /* Adjusted top position for mobile */
+        left: 20px;
+        /* Adjusted left position for mobile */
+        width: 100px;
+        /* Decreased width for mobile */
+    }
+                .img2Hi {
+                    position: absolute;
+                    top: 0px;
+                    margin-top: -130px;
+                    /* Adjusted top position for mobile */
+                    left: 20px;
+                    /* Adjusted left position for mobile */
+                    width: 100px;
+                    /* Decreased width for mobile */
+                }
+        .menu-button {
+            right: 20px;
+        }
+
+}
+
+
+
 
 

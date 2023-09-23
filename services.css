@@ -4,21 +4,12 @@ body {
     background-color: black;
 }
 
-section {
-    display: flex;
-    padding: 40px;
-    box-sizing: border-box;
-}
-.secUni{
-    margin-top: -400px;
-}
+
 
   .full-width-section {
       background-image: url("./services/ser1.jpeg");
       background-size: cover;
       background-position: center;
-      padding: 500px;
-      height: 100%;
     transition: opacity 0.5s ease;
       }
 
@@ -39,17 +30,13 @@ section {
 }
 
   .responsive-image {
-    max-width: 200%;
     height: auto;
     border-radius: 20px;
-    margin-left: 50px;
         /* You can adjust the value as needed */
 }
 .responsive-imageUni{
-    width: 200%;
         max-height: 40%;
         border-radius: 20px;
-        margin-left: 50px;
 }
 .p1{
     font-size: 30px;
@@ -61,9 +48,89 @@ section {
 }
 ol,ul{
     font-size: 24px;
-    margin-left: 40px;
     
 }
 .p2{
     font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+section {
+        display: flex;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .secUni {
+        margin-top: -400px;
+    }
+
+.full-width-section {
+        padding: 500px;
+        height: 100%;
+    }
+.responsive-imageUni {
+    width: 200%;
+    margin-left: 50px;
+}
+  .responsive-image {
+      max-width: 200%;
+      margin-left: 50px;
+      /* You can adjust the value as needed */
+  }
+  .text {
+      margin-left: 30%;
+  }
+  ol,
+  ul {
+      
+      margin-left: 40px;
+
+  }
+
+}
+
+
+/* Apply styles to the first section */
+@media screen and (max-width: 767px) {
+    .full-width-section {
+        position: relative;
+        height: 100vh;
+        padding: 100px;
+    }
+
+    .transparent {
+        opacity: 0;
+    }
+
+    .responsive-imageUni {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .responsive-image {
+        max-width: 90%;
+        margin: 10px 0 20px 20px;
+    }
+
+    .text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .h11 {
+       
+        text-align: center;
+    }
+
+    ol,
+    ul {
+        margin-left: 5px;
+    }
+
+    .p2 {
+        text-align: center;
+    }
+
 }

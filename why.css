@@ -4,43 +4,88 @@ p {
     margin: 0;
     padding: 0;
 }
-body{background-color: black;}
+body{
+    background-color: black;
+}
 
 /* Apply styles to the first section */
 .full-width-section {
     position: relative;
     background-image: url('./TT/why.jpg');
-        /* Replace with your image path */
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        /* Adjust the height as needed */
-        color: white;
-        transition: opacity 1.5s ease;
-        /* Adjust opacity to control transparency */
+    /* Replace with your image path */
+    height: 100vh;
+    /* Adjust the height as needed */
+    color: white;
+    transition: opacity 1.5s ease;
+    /* Adjust opacity to control transparency */
 }
 .transparent {
     opacity: 0;
 }
 h1{
-    font-size: 48px;
     color: white;
-    font-weight: bolder;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
-                .whycontainer {
-                    max-width: 800px;
-                    margin: 0 auto;
-                    padding: 20px;
+.whycontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
                 }
       
         
+    .pe {
+        color: white;
+    }
+
+
+
+@media screen and (min-width: 768px) {
+
+            /* Apply styles to the first section */
+                .full-width-section {
+                    background-size: cover;
+                    background-position: center;
+                }
+                h1 {
+                    font-size: 48px;
+                    font-weight: bolder;      
+                        }
                 .pe {
                     font-size: 28px;
                     line-height: 2;
-                    color: white;
-                                    /* Adjust the indentation as needed */
-                }
+                        }
+        }
+
+
+
+    /* CSS for mobile screens (up to 767px) */
+ @media (max-width: 767px) {
+/* Apply styles to the first section */
+    .full-width-section {
+        background-size: 120%;
+        /* Adjust the value to zoom out or in */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* This may help with mobile background positioning */
+        background-position: center center;
+    }
+
+    
+
+    h1 {
+        font-size: 22px;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    
+
+    .pe {
+        font-size: 24px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+ }
